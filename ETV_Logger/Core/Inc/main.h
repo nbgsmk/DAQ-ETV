@@ -81,7 +81,7 @@ void Error_Handler(void);
 #define d_dummy -99
 #define e_dummy -99
 #define blinkiPERIOD 1000
-#define f_dummy -998
+#define f_dummy -999
 #define EXTI_MINIMUM_REPEAT_mS 500
 #define BOARD_LED_Pin GPIO_PIN_13
 #define BOARD_LED_GPIO_Port GPIOC
