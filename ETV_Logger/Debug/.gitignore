@@ -1,0 +1,9 @@
+/Core/
+/Drivers/
+/FATFS/
+/Middlewares/
+/USB_HOST/
+/makefile
+/objects.list
+/objects.mk
+/sources.mk
