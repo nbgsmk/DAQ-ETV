@@ -457,7 +457,7 @@ void extInt_B_receiver(void *argument)
 
 void adcBackgroundStart() {
 	/*
-	 * ADC ulazi su:
+	 * ADC ulazi su: su
 	 * in4
 	 * in5
 	 * in6
