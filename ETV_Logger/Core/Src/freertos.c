@@ -289,7 +289,7 @@ void StartDefaultTask(void *argument)
 void blinkiStart(void *argument)
 {
   /* USER CODE BEGIN blinkiStart */
-	int blinkLen = 6;
+	int blinkLen = 4;
 	/* Infinite loop */
 	for (;;) {
 		uint32_t x = HAL_RTCEx_BKUPRead(&hrtc, 11);
@@ -468,7 +468,7 @@ void adcBackgroundStart() {
 
 //	treptrep();
 	ledon();
-	osDelay(blinkiPERIOD);
+	osDelay(blinkiPERIOD * 2);
 	HAL_ADC_Start_DMA(&hadc1, (uint32_t*) adcDMABuf, ADC_ULAZA_koristi);// pokrenem ADC konverziju
 
 	/*

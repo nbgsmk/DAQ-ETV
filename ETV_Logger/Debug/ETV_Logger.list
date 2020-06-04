@@ -1805,8 +1805,8 @@ void blinkiStart(void *argument)
  800116c:	af00      	add	r7, sp, #0
  800116e:	6078      	str	r0, [r7, #4]
   /* USER CODE BEGIN blinkiStart */
-	int blinkLen = 6;
- 8001170:	2306      	movs	r3, #6
+	int blinkLen = 4;
+ 8001170:	2304      	movs	r3, #4
  8001172:	60fb      	str	r3, [r7, #12]
 	/* Infinite loop */
 	for (;;) {
@@ -2235,8 +2235,8 @@ void adcBackgroundStart() {
 //	treptrep();
 	ledon();
  80014a0:	f000 fd3c 	bl	8001f1c <ledon>
-	osDelay(blinkiPERIOD);
- 80014a4:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
+	osDelay(blinkiPERIOD * 2);
+ 80014a4:	f44f 60fa 	mov.w	r0, #2000	; 0x7d0
  80014a8:	f00c f8d0 	bl	800d64c <osDelay>
 	HAL_ADC_Start_DMA(&hadc1, (uint32_t*) adcDMABuf, ADC_ULAZA_koristi);// pokrenem ADC konverziju
  80014ac:	2206      	movs	r2, #6
