@@ -444,7 +444,7 @@ void extInt_B_receiver(void *argument)
   /* USER CODE BEGIN extInt_B_receiver */
 	/* Infinite loop */
 	for (;;) {
-		if (pdTRUE == ulTaskNotifyTake(pdTRUE, portMAX_DELAY)) {
+		if (pdTRUE == osTaskNotifyTake(pdTRUE, portMAX_DELAY)) {
 			// ISR se desio, uradi nesto
 			osDelay(pdMS_TO_TICKS(EXTI_MINIMUM_REPEAT_mS));		// TODO jos neko vreme ne raagujem na novi interrupt
 		}
