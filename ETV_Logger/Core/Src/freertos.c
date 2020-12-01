@@ -16,6 +16,16 @@
  *
  ******************************************************************************
  */
+
+
+/*
+https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/
+https://www.youtube.com/watch?v=SWYqp7iY_Tc&feature=emb_rel_pause
+https://www.jetbrains.com/help/idea/commit-and-push-changes.html#
+https://www.jetbrains.com/help/idea/github.html#
+ */
+
+
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
@@ -333,8 +343,8 @@ void analogFilterStart(void *argument)
 	 * adc1_in4
 	 * adc1_in5
 	 * ...
-	 * temperature sensor (interni senzor na cpu)
-	 * Vrefint (interni referentni napon za adc)
+	 * pretposlednji - temperature sensor (interni senzor na cpu)
+	 * poslednji - Vrefint (interni referentni napon za adc)
 	 */
 	uint32_t istorija[ADC_SAMPLES_max][ADC_ULAZA_max] = { 0 };
 	uint32_t najnoviji[ADC_ULAZA_koristi] = { 0 };
